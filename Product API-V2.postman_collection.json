@@ -1,0 +1,420 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Product API-V2",
+		"_postman_id": "05632788-104e-673a-3ba8-03b34d9ef1da",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Category",
+			"description": "",
+			"item": [
+				{
+					"name": "GetCategoryList",
+					"request": {
+						"url": "http://localhost:8000/api/category",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "CreateCategory",
+					"request": {
+						"url": "http://localhost:8000/api/category",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Electronics Devices",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "ShowCategoryDetails",
+					"request": {
+						"url": "http://localhost:8000/api/category/3",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "EditCategory",
+					"request": {
+						"url": "http://localhost:8000/api/category/2/edit",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateCategory",
+					"request": {
+						"url": "http://localhost:8000/api/category/2/update",
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Smart Phone Update 1",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "inactive",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteCategory",
+					"request": {
+						"url": "http://localhost:8000/api/category/2/delete",
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Brand",
+			"description": "",
+			"item": [
+				{
+					"name": "GetBrandList",
+					"request": {
+						"url": "http://localhost:8000/api/brand",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "CreateBrand",
+					"request": {
+						"url": "http://localhost:8000/api/brand",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "General",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "ShowBrandDetails",
+					"request": {
+						"url": "http://localhost:8000/api/brand/1",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "EditBrand",
+					"request": {
+						"url": "http://localhost:8000/api/brand/6/edit",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateBrand",
+					"request": {
+						"url": "http://localhost:8000/api/brand/6/update",
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Walton",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "active",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteBrand",
+					"request": {
+						"url": "http://localhost:8000/api/brand/2/delete",
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "product",
+			"description": "",
+			"item": [
+				{
+					"name": "GetProductList",
+					"request": {
+						"url": "http://localhost:8000/api/product",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "ShowProductDetails",
+					"request": {
+						"url": "http://localhost:8000/api/product/2",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "EditProduct",
+					"request": {
+						"url": "http://localhost:8000/api/product/1/edit",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteProduct",
+					"request": {
+						"url": "http://localhost:8000/api/product/1/delete",
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateProduct",
+					"request": {
+						"url": "http://localhost:8000/api/product/1/update",
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Helio Smart Phone",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "40000",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "quantity",
+									"value": "100",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "category_id",
+									"value": "1",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "brand_id",
+									"value": "1",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "thumbnail",
+									"value": "https://picsum.photos/300",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "New Product Update",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "inactive",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "CreateProduct",
+					"request": {
+						"url": "http://localhost:8000/api/product",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Samsung A12",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "21000",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "quantity",
+									"value": "10",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "category_id",
+									"value": "2",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "brand_id",
+									"value": "2",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "thumbnail",
+									"value": "https://picsum.photos/300",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here'",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "inactive",
+									"description": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
